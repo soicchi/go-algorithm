@@ -10,9 +10,10 @@ var baseNums = []int{2, 5, 1, 8, 7, 3}
 
 func main() {
 	// bubble sort
-	numsForBubble := make([]int, len(baseNums))
-	copy(numsForBubble, baseNums)
+	bubbleSlice := sort.BubbleSort(baseNums)
+	fmt.Println("Bubble sort:", bubbleSlice)
 
-	sort.BubbleSort(numsForBubble)
-	fmt.Println("Bubble sort:", numsForBubble)
+	// selection sort
+	selectionSlice := sort.SelectionSort(baseNums)
+	fmt.Println("Selection sort:", selectionSlice)
 }
