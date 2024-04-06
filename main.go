@@ -16,4 +16,8 @@ func main() {
 	// selection sort
 	selectionSlice := sort.SelectionSort(baseNums)
 	fmt.Println("Selection sort:", selectionSlice)
+
+	// insertion sort
+	insertionSlice := sort.InsertionSort(baseNums)
+	fmt.Println("Insertion sort:", insertionSlice)
 }
